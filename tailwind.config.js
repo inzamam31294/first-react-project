@@ -18,6 +18,7 @@ module.exports = {
       black: '#000',
       white: '#fff',
       reactbg: '#282c34',
+      accent: "#404a60",
 
       gray: {
         100: '#f7fafc',

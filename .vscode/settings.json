@@ -1,0 +1,24 @@
+{
+        "eslint.autoFixOnSave": true,
+        "eslint.enable": true,
+        "eslint.run": "onType",
+        "eslint.validate": [
+            "javascript",
+            "javascriptreact",
+            "html",
+            {"language": "vue","autoFix": true}
+        ],
+        "eslint.workingDirectories": [
+            "./*"
+            ],
+        
+        "editor.rulers": [
+            80
+        ],
+        "editor.quickSuggestions": {
+            "strings": true,
+        },
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+}

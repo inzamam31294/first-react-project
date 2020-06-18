@@ -1,59 +1,12 @@
 
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 10s linear;
-    animation-delay: 0;
-  }
-}
-
-.App-header {
-  font-size: calc(10px + 2vmin);
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: translateX(calc(-100vw + 32.5vw)) rotate(0deg);
-  }
-  to {
-    transform: translateX(calc(100vw - 32.5vw)) rotate(360deg);
-  }
-}
-
-
-
-/* @font-face {
+@font-face {
   font-family: Raleway;
-  src: url("/Raleway/Raleway-Regular.ttf");
+  src: url("./Raleway/Raleway-Regular.ttf");
 }
 @font-face {
   font-family: Raleway-Semi;
-  src: url("/Raleway/Raleway-Bold.ttf");
-} */
+  src: url("./Raleway/Raleway-Bold.ttf");
+}
 .main-index-tilt {
   height: 500px;
 }
@@ -64,7 +17,7 @@ code {
 .p-class {
   font-size: 30px;
   text-align: left;
-  /* font-family: "Raleway-Semi", sans-serif; */
+  font-family: "Raleway-Semi", sans-serif;
   line-height: 2.5rem;
   text-transform: uppercase;
 }
@@ -127,12 +80,10 @@ h3 {
   display: block;
 }
 .text-u-header1,
-/* .text-u-header2, */
 .text-container {
   text-transform: uppercase;
   font-size: 8px;
-  /* font-family: "Raleway"; */
-  /* display: inline-block; */
+  font-family: "Raleway";
   white-space: nowrap;
 }
 .text-container {
