@@ -46,14 +46,14 @@ code {
 
 
 
-/* @font-face {
+@font-face {
   font-family: Raleway;
-  src: url("/Raleway/Raleway-Regular.ttf");
+  src: url("./Raleway/Raleway-Regular.ttf");
 }
 @font-face {
   font-family: Raleway-Semi;
-  src: url("/Raleway/Raleway-Bold.ttf");
-} */
+  src: url("./Raleway/Raleway-Bold.ttf");
+}
 .main-index-tilt {
   height: 500px;
 }
@@ -64,7 +64,7 @@ code {
 .p-class {
   font-size: 30px;
   text-align: left;
-  /* font-family: "Raleway-Semi", sans-serif; */
+  font-family: "Raleway-Semi", sans-serif;
   line-height: 2.5rem;
   text-transform: uppercase;
 }
@@ -131,7 +131,7 @@ h3 {
 .text-container {
   text-transform: uppercase;
   font-size: 8px;
-  /* font-family: "Raleway"; */
+  font-family: "Raleway";
   /* display: inline-block; */
   white-space: nowrap;
 }

@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Raleway;
+    src: url("./Raleway/Raleway-Regular.ttf");
+  }
+  @font-face {
+    font-family: Raleway-Medium;
+    src: url("./Raleway/Raleway-Medium.ttf");
+  }
+  .index-3 {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  .index-3-cont {
+    padding: 0;
+  }
+  .our-services {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Raleway";
+    font-weight: normal;
+    line-height: 5rem;
+  }
+  .arrow-class {
+    height: 50px;
+    width: 40px;
+  }
+  .index-3-uheader {
+    text-align: center;
+    padding-top: 0;
+    font-size: 25px;
+    font-family: "Raleway";
+  }
+  .index-3-c1-title,
+  .index-3-c2-title,
+  .index-3-c3-title {
+    font-size: 30px;
+    font-family: "Raleway-Medium";
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    padding-top: 160px;
+    line-height: 3.2rem;
+    letter-spacing: 1px;
+  }
+  .index-3-c-text {
+    font-family: "Raleway";
+    font-size: 18px;
+    color: whitesmoke;
+    padding-top: 0;
+    letter-spacing: 1.5px;
+  }
+  .hover-text {
+    line-height: 2rem;
+    margin: auto 0;
+  }
+  .upper-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .under-text {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.5rem;
+    padding-top: 20px;
+  }
+  .v-card--reveal {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    font-family: "Raleway";
+    width: 100%;
+    height: 100%;
+  }
+  .our-service-cards {
+    height: 460px;
+  }
+  @media (min-width: 700px) {
+    .our-services {
+      font-size: 50px;
+      letter-spacing: 4px;
+    }
+    .index-3-headertext {
+      padding-bottom: 50px;
+    }
+    .index-3-c1-title,
+    .index-3-c2-title,
+    .index-3-c3-title {
+      font-size: 40px;
+    }
+    .index-3-c-text {
+      font-size: 18px;
+      letter-spacing: 1.5px;
+    }
+    .arrow-class {
+      height: 80px;
+      width: 80px;
+    }
+    .upper-text {
+      font-size: 30px;
+    }
+    .under-text {
+      font-size: 19px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .our-services {
+      font-size: 75px;
+      letter-spacing: 4px;
+    }
+    .hover-text {
+      line-height: 2.5rem;
+      margin-top: 150px;
+    }
+  }
+  @media (min-width: 1500px) {
+    .our-service-cards {
+      height: 480px;
+    }
+  }

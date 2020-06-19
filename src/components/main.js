@@ -1,45 +1,44 @@
 import React, {Component} from 'react';
 import '../styles/main.css';
+import '../scripts/TextScramble';
 
 class Main extends Component {
     render(){
       return (
-            <div class="main-cont bg-accent h-screen">
+            <div className="main-cont bg-accent h-screen">
                     <div>
-                    <div class="main-heading">
-                        <div class="header-text">
-                        <h1 class="p-class">
-                            <div class="text-1">
+                    <div className="main-heading">
+                        <div className="header-text">
+                        <h1 className="p-class">
+                            <div className="text-1">
                             your
                             </div>
-                            <div class="text-2">
+                            <div className="text-2">
                             partner
                             </div>
-                            <div class="text-3">
+                            <div className="text-3">
                             for
                             </div>
-                            <div class="text-4">
+                            <div className="text-4">
                             all
                             </div>
                             <br />
-                            <div class="text-5">
+                            <div className="text-5">
                             things
                             </div>
-                            <div class="text-6">
+                            <div className="text-6">
                             digital
                             </div>
                         </h1>
                         </div>
-                        <p class="u-header">
-                        <div class="text-u-header">
-                            <p class="text-u-header1">we are an enthusiastic team of</p>
-                            <div class="text-container">
+                        <div className="u-header">
+                            <p className="text-u-header1">we are an enthusiastic team of</p>
+                            <div className="text-container">
                             <div
-                                class="text-u-header2"
+                                className="text-u-header2"
                             ></div>
                             </div>
                         </div>
-                        </p>
                     </div>
                     </div>
                 </div>

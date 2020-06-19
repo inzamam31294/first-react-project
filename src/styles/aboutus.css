@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Raleway;
+    src: url("/Raleway/Raleway-Regular.ttf");
+  }
+  .about-us {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Raleway";
+    font-weight: normal;
+  }
+  .arrow-class {
+    height: 50px;
+    width: 40px;
+  }
+  .index-2-uheader {
+    text-align: center;
+    padding-top: 0;
+    font-size: 12px;
+    font-family: "Raleway";
+  }
+  @media (min-width: 700px) {
+    .about-us {
+      font-size: 50px;
+      letter-spacing: 4px;
+    }
+    .index-2-uheader {
+      font-size: 25px;
+      width: 690px;
+      line-height: 2.3rem;
+      line-break: normal;
+    }
+    .arrow-class {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .about-us {
+      font-size: 75px;
+      letter-spacing: 4px;
+    }
+    .index-2-uheader {
+      width: 890px;
+    }
+  }
