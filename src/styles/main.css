@@ -7,13 +7,6 @@
   font-family: Raleway-Semi;
   src: url("./Raleway/Raleway-Bold.ttf");
 }
-.main-index-tilt {
-  height: 500px;
-}
-.main-cont {
-  padding: 0;
-  height: 100vh;
-}
 .p-class {
   font-size: 30px;
   text-align: left;
@@ -24,7 +17,7 @@
 .header-text {
   animation: showfirst ease;
   animation-duration: 2s;
-  padding-top: 200px;
+  /* padding-top: 200px; */
 }
 .p-class div {
   display: inline-block;
@@ -163,11 +156,11 @@ h3 {
     text-align: center;
     padding-bottom: 20px;
   }
-  .main-index-tilt {
+  /* .main-index-tilt {
     height: 1000px;
-  }
+  } */
   .header-text {
-    padding-top: 400px;
+    /* padding-top: 400px; */
   }
   .text-u-header {
     height: 20px;
@@ -175,7 +168,6 @@ h3 {
   }
   .text-u-header,
   .text-u-header2 {
-  
     display: inline-block;
   }
   .text-u-header1,
@@ -229,7 +221,7 @@ h3 {
     line-height: 5.5rem;
   }
   .main-index {
-    height: 850px;
+    /* height: 850px; */
   }
   .text-u-header1,
   .text-u-header2 {

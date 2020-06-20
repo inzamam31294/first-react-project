@@ -5,7 +5,7 @@ import '../scripts/TextScramble';
 class Main extends Component {
     render(){
       return (
-            <div className="main-cont bg-accent h-screen">
+            <div className="main-cont bg-accent h-screen flex flex-col justify-center items-center">
                     <div>
                     <div className="main-heading">
                         <div className="header-text">

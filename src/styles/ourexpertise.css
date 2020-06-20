@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Raleway-Regular;
+    src: url("./Raleway/Raleway-Regular.ttf");
+  }
+  @font-face {
+    font-family: Raleway-Bold;
+    src: url("./Raleway/Raleway-ExtraBold.ttf");
+  }
+  .index-4 {
+    /* padding-top: 100px; */
+    padding-bottom: 100px;
+    /* background-image: url("/experties.png");
+    background-size: contain;
+    background-position: center; */
+  }
+  .index-4-cont {
+    padding: 0;
+  }
+  .index-4-headertext {
+    /* display: inline-flex; */
+  }
+  .our-expertise {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Raleway-Regular";
+    font-weight: normal;
+    line-height: 5rem;
+  }
+  .arrow-class {
+    height: 50px;
+    width: 40px;
+    align-items: initial;
+  }
+  .index-4-c1-title,
+  .index-4-c2-title,
+  .index-4-c3-title {
+    font-family: "Raleway-Bold";
+    font-size: 12px;
+    /* justify-content: center; */
+    padding-bottom: 0;
+  }
+  .index-4-c1-text,
+  .index-4-c2-text,
+  .index-4-c3-text {
+    /* text-align: center; */
+    padding-top: 0;
+    font-family: "Raleway-Regular";
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .icon-class {
+    height: 30px;
+    width: 30px;
+  }
+  @media (min-width: 700px) {
+    .our-expertise {
+      font-size: 50px;
+      letter-spacing: 3px;
+    }
+    .index-4-c1-title,
+    .index-4-c2-title,
+    .index-4-c3-title {
+      font-size: 25px;
+    }
+    .index-4-c1-text,
+    .index-4-c2-text,
+    .index-4-c3-text {
+      font-size: 15px;
+      line-height: 2rem;
+      letter-spacing: 1.5px;
+    }
+    .arrow-class {
+      height: 80px;
+      width: 80px;
+    }
+    .index-4 {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    .icon-class {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .our-expertise {
+      font-size: 75px;
+      letter-spacing: 4px;
+    }
+    .index-4-c1-title,
+    .index-4-c2-title,
+    .index-4-c3-title {
+      font-size: 23px;
+    }
+    .index-4-c1-text,
+    .index-4-c2-text,
+    .index-4-c3-text {
+      font-size: 19px;
+      line-height: 2.7rem;
+      letter-spacing: 1.5px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .index-4-c1-text,
+    .index-4-c2-text,
+    .index-4-c3-text {
+      text-align: left;
+      margin-left: 90px;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 1300px) {
+    .our-expertise {
+      font-size: 75px;
+      letter-spacing: 4px;
+    }
+    .index-4-c1-title,
+    .index-4-c2-title,
+    .index-4-c3-title {
+      font-size: 25px;
+    }
+    .index-4-c1-text,
+    .index-4-c2-text,
+    .index-4-c3-text {
+      text-align: left;
+      font-size: 19px;
+      line-height: 2.7rem;
+      letter-spacing: 1.5px;
+    }
+  }

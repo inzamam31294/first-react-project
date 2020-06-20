@@ -22,7 +22,7 @@ class About extends Component {
                 data-aos-duration="2000"
                 data-aos-easing="ease"
                 data-aos="fade-up"
-                className="index-2-uheader"
+                className="index-2-uheader w-4/6"
                 >Our work is bound to be as creative and fresh to the eye as is mint
                 to a mojito glass. We create smart code, beautiful designs, and
                 fusion of what adds a minty touch to your needs. We cultivate an

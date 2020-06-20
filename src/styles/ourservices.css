@@ -45,7 +45,7 @@
   .index-3-c-text {
     font-family: "Raleway";
     font-size: 18px;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     padding-top: 0;
     letter-spacing: 1.5px;
   }
