@@ -4,12 +4,12 @@ import '../styles/ourexpertise.css';
 class Expertise extends Component {
     render(){
       return (
-        <div className="index-4-cont flex flex-col h-screen justify-center">
+        <div className="index-4-cont flex flex-col h-screen justify-center ">
               <div className="index-4-headertext text-center">
                 <div
                   data-aos-delay="300"
                   data-aos-duration="2000"
-                  data-aos-easing="ease"
+                  data-aos-easing="easeInOut"
                   data-aos="fade-right"
                 >
                   {/* <img src="/arrow.png" contain className="arrow-class" /> */}
@@ -17,17 +17,17 @@ class Expertise extends Component {
                 <h1
                   className="our-expertise uppercase"
                   data-aos-duration="2000"
-                  data-aos-easing="ease"
+                  data-aos-easing="easeInOut"
                   data-aos="fade-right"
                 >
                   our<span className="font-bold"> expertise</span>
                 </h1>
               </div>
-              <div className="index-4-cont2 flex">
+              <div className="index-4-cont2 flex grid grid-cols-3 gap-3">
                     <div
                       data-aos-delay="0"
-                      data-aos-duration="2000"
-                      data-aos-easing="ease"
+                      data-aos-duration="500"
+                      data-aos-easing="easeInOut"
                       data-aos="fade-up"
                       className="flex-grow"
                     >
@@ -48,8 +48,8 @@ class Expertise extends Component {
                     </div>
                     <div
                       data-aos-delay="250"
-                      data-aos-duration="2000"
-                      data-aos-easing="ease"
+                      data-aos-duration="500"
+                      data-aos-easing="easeInOut"
                       data-aos="fade-up"
                       className="flex-grow"
                     >
@@ -70,8 +70,8 @@ class Expertise extends Component {
                     </div>
                     <div
                       data-aos-delay="500"
-                      data-aos-duration="2000"
-                      data-aos-easing="ease"
+                      data-aos-duration="500"
+                      data-aos-easing="easeInOut"
                       data-aos="fade-up"
                       className="flex-grow"
                     >

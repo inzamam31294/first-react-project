@@ -23,9 +23,9 @@ class Services extends Component {
                   our<span className="font-bold"> services</span>
                 </h1>
               </div>
-              <div className="flex">
+              <div className="flex grid grid-cols-3 gap-3">
                       <div
-                        className="our-service-cards flex-grow"
+                        className="our-service-cards flex-grow bg-accent"
                       >
                         <div
                           className="index-3-c1-title uppercase"
@@ -53,7 +53,7 @@ class Services extends Component {
                           </div> */}
                       </div>
                       <div
-                        className="our-service-cards flex-grow"
+                        className="our-service-cards flex-grow bg-secondary"
                       >
                         <div
                           className="index-3-c2-title uppercase"
@@ -79,7 +79,7 @@ class Services extends Component {
                           </div>               */}
                            </div>  
                       <div
-                        className="our-service-cards flex-grow"
+                        className="our-service-cards flex-grow bg-tertiary"
                       >
                         <div
                           className="index-3-c3-title uppercase"

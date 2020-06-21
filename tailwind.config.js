@@ -19,6 +19,8 @@ module.exports = {
       white: '#fff',
       reactbg: '#282c34',
       accent: "#404a60",
+      secondary: "#66cc99",
+      tertiary: "#CCCCCC",
 
       gray: {
         100: '#f7fafc',
