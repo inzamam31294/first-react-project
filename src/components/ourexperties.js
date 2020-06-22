@@ -29,7 +29,7 @@ class Expertise extends Component {
                       data-aos-duration="500"
                       data-aos-easing="easeInOut"
                       data-aos="fade-up"
-                      className="flex-grow"
+                      className=""
                     >
                       <div className="index-4-c1-title">
                         {/* <div className="icon-class">
@@ -38,7 +38,7 @@ class Expertise extends Component {
                         &nbsp;web
                         <span className=""> &nbsp;development</span>
                       </div>
-                      <p className="index-4-c1-text ">
+                      <p className="index-4-c1-text">
                         Node.js<br />
                         React, Vue, Ember<br />
                         PHP, Symphony, Laravel<br />
@@ -51,7 +51,7 @@ class Expertise extends Component {
                       data-aos-duration="500"
                       data-aos-easing="easeInOut"
                       data-aos="fade-up"
-                      className="flex-grow"
+                      className=""
                     >
                       <div className="index-4-c2-title">
                         {/* <div className="icon-class">
@@ -73,7 +73,7 @@ class Expertise extends Component {
                       data-aos-duration="500"
                       data-aos-easing="easeInOut"
                       data-aos="fade-up"
-                      className="flex-grow"
+                      className=""
                     >
                       <div className="index-4-c3-title">
                         {/* <div className="icon-class">

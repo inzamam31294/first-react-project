@@ -8,10 +8,10 @@
     font-family: "Raleway";
     font-weight: normal;
   }
-  .arrow-class {
+  /* .arrow-class {
     height: 50px;
     width: 40px;
-  }
+  } */
   .index-2-uheader {
     text-align: center;
     padding-top: 0;
@@ -29,10 +29,10 @@
       line-height: 2.3rem;
       line-break: normal;
     }
-    .arrow-class {
+    /* .arrow-class {
       height: 80px;
       width: 80px;
-    }
+    } */
   }
   @media (min-width: 1000px) {
     .about-us {

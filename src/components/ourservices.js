@@ -1,26 +1,28 @@
 import React, {Component} from 'react';
 import '../styles/ourservices.css';
+import image from '../assets/arrow.png'
 
 class Services extends Component {
     render(){
       return (
           <div className="h-screen flex flex-col justify-center">
               <div className="index-3-headertext text-center">
-                <div
-                  data-aos-delay="300"
-                  data-aos-duration="2000"
-                  data-aos-easing="ease"
-                  data-aos="fade-right"
-                >
-                  {/* <v-img src="/arrow.png" contain className="arrow-class" /> */}
-                </div>
                 <h1
                   className="our-services uppercase"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
                   data-aos="fade-right"
                 >
-                  our<span className="font-bold"> services</span>
+                     <div
+                  data-aos-delay="300"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease"
+                  data-aos="fade-right"
+                  className="inline-block"
+                >
+                  <img src={image} className="arrow-class" alt={image} />
+                </div> 
+                our<span className="font-bold"> services</span>
                 </h1>
               </div>
               <div className="flex grid grid-cols-3 gap-3">
@@ -36,21 +38,20 @@ class Services extends Component {
                         <p className="index-3-c-text"
                           >Software Solutions For Needs
                           </p>
-                          {/* <div
-                        
-                            className="d white--text"
+                          <div
+                            className="hover-text white--text bg-secondary"
                           >
-                            <div className="hover-text">
+                            <div className="text">
                               <span className="upper-text">web & app development</span>
                               <div className="under-text">
-                                Our full-stack developers<br />
-                                & agile experts combine the tech,<br />
-                                the talent & the processes<br />
-                                to build your web & mobile<br />
+                                Our full-stack developers
+                                & agile experts combine the tech,
+                                the talent & the processes
+                                to build your web & mobile
                                 applications.
                               </div>
                             </div>
-                          </div> */}
+                          </div>
                       </div>
                       <div
                         className="our-service-cards flex-grow bg-secondary"
@@ -64,19 +65,19 @@ class Services extends Component {
                         <p className="index-3-c-text"
                           >Digital Reputation Management
                           </p>
-                          {/* <div                     
-                            className="d"
+                          <div                     
+                            className="hover-text white--text bg-tertiary"
                           >
-                            <div className="hover-text">
+                            <div className="text">
                               <span className="upper-text">digital media</span>
                               <div className="under-text">
-                                We create impactful<br />
-                                experiences for our audience<br />
-                                through audience intelligence<br />
+                                We create impactful
+                                experiences for our audience
+                                through audience intelligence
                                 & sophisticated targeting.
                               </div>
                             </div>
-                          </div>               */}
+                          </div>              
                            </div>  
                       <div
                         className="our-service-cards flex-grow bg-tertiary"
@@ -90,21 +91,19 @@ class Services extends Component {
                         <p className="index-3-c-text"
                           >Creative Material For Branding
                           </p>
-                     
-                          {/* <div
-                        
-                            className="white--text"
+                          <div
+                            className="hover-text white--text bg-accent"
                           >
-                            <div className="hover-text">
+                            <div className="text">
                               <span className="upper-text">graphic design</span>
                               <div className="under-text">
-                                We convert pixel-perfect<br />
-                                designs into retina-ready codes<br />
-                                for our clients within the<br />
+                                We convert pixel-perfect
+                                designs into retina-ready codes
+                                for our clients within the
                                 decided timelines.
                               </div>
                             </div>
-                          </div> */}
+                          </div>
                       </div>
                       </div>
                 </div>

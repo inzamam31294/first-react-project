@@ -26,11 +26,11 @@
     font-weight: normal;
     line-height: 5rem;
   }
-  .arrow-class {
+  /* .arrow-class {
     height: 50px;
     width: 40px;
     align-items: initial;
-  }
+  } */
   .index-4-c1-title,
   .index-4-c2-title,
   .index-4-c3-title {
@@ -71,10 +71,10 @@
       line-height: 2rem;
       letter-spacing: 1.5px;
     }
-    .arrow-class {
+    /* .arrow-class {
       height: 80px;
       width: 80px;
-    }
+    } */
     .index-4 {
       padding-top: 200px;
       padding-bottom: 200px;
@@ -106,7 +106,7 @@
     .index-4-c1-text,
     .index-4-c2-text,
     .index-4-c3-text {
-      text-align: left;
+      /* text-align: left; */
       /* margin-left: 90px; */
       padding-right: 0;
     }
@@ -124,7 +124,7 @@
     .index-4-c1-text,
     .index-4-c2-text,
     .index-4-c3-text {
-      text-align: left;
+      /* text-align: left; */
       font-size: 19px;
       line-height: 2.7rem;
       letter-spacing: 1.5px;
