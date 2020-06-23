@@ -8,17 +8,16 @@ class Services extends Component {
           <div className="h-screen flex flex-col justify-center">
               <div className="index-3-headertext text-center">
                 <h1
-                  className="our-services uppercase"
+                  className="our-services uppercase flex justify-center items-center" 
                   data-aos-duration="2000"
                   data-aos-easing="ease"
                   data-aos="fade-right"
                 >
-                     <div
+                <div
                   data-aos-delay="300"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
                   data-aos="fade-right"
-                  className="inline-block"
                 >
                   <img src={image} className="arrow-class" alt={image} />
                 </div> 

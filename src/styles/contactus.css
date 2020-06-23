@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Raleway;
+    src: url("./Raleway/Raleway-Regular.ttf");
+  }
+  .index-9-cont {
+    padding: 0;
+  }
+  .contact-us {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Raleway";
+    font-weight: normal;
+    padding: 0;
+    line-height: 5rem;
+  }
+  .arrow-class {
+    height: 40px;
+    width: 30px;
+  }
+  .text-u-header {
+    font-size: 15px;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+  .card-title-style {
+    justify-content: center;
+    font-family: "Raleway";
+    letter-spacing: 1px;
+  }
+  .icon-image {
+    margin: 0 auto;
+    height: 40%;
+    width: 40%;
+  }
+  .card-text-style {
+    /* text-align: left; */
+    font-family: "Raleway";
+    font-size: 17px;
+    line-height: 1.2rem;
+  }
+  @media (min-width: 700px) {
+    .contact-us {
+      font-size: 50px;
+      letter-spacing: 4px;
+    }
+    .arrow-class {
+      height: 80px;
+      width: 80px;
+    }
+    .index-9 {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    .index-9-headertext {
+      padding-bottom: 25px;
+    }
+    .text-u-header {
+      font-size: 20px;
+      padding-bottom: 50px;
+    }
+    .index-9-card {
+      justify-content: center;
+    }
+    .card-title-style {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .contact-us {
+      font-size: 75px;
+      letter-spacing: 4px;
+    }
+    .text-u-header {
+      font-size: 25px;
+    }
+    .card-title-style {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 1100px) {
+    .card-title-style {
+      font-size: 20px;
+    }
+    .icon-image {
+      height: 30%;
+      width: 30%;
+    }
+  }

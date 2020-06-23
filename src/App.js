@@ -4,6 +4,7 @@ import  Main  from "./components/main";
 import  About from "./components/aboutus";
 import  Services from "./components/ourservices";
 import  Expertise from "./components/ourexperties";
+import  Contact from "./components/contact";
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -23,6 +24,7 @@ class App extends Component {
         <About />
         <Services />
         <Expertise />
+        <Contact />
       </div>
     );
   }

@@ -38,7 +38,7 @@ class Expertise extends Component {
                         &nbsp;web
                         <span className=""> &nbsp;development</span>
                       </div>
-                      <p className="index-4-c1-text">
+                      <p className="index-4-c1-text flex text-left justify-center">
                         Node.js<br />
                         React, Vue, Ember<br />
                         PHP, Symphony, Laravel<br />
@@ -60,12 +60,12 @@ class Expertise extends Component {
                         mobile
                         <span className=""> &nbsp;development</span>
                       </div>
-                      <p className="index-4-c2-text">
-                        React Native<br />
+                      <p className="index-4-c2-text flex text-left justify-center">
+                        React Native/Android Studio<br />
                         Swift<br />
                         IOS<br />
                         Java<br />
-                        Android
+                     
                       </p>
                     </div>
                     <div
@@ -82,7 +82,7 @@ class Expertise extends Component {
                         &nbsp;machine
                         <span className=""> &nbsp;learning</span>
                       </div>
-                      <p className="index-4-c3-text">
+                      <p className="index-4-c3-text flex text-left justify-center">
                         Python<br />
                         Natural Language Processing
                       </p>
