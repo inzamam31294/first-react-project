@@ -24,17 +24,17 @@ class Contact extends Component {
   }
 
   resetForm() {
-    this.refs.contactForm.reset();
+    this.refs.cForm.reset();
   }
 
-  componentWillMount() {
-    let formRef = DB.ref('form').orderByKey().limitToLast(6);
-    formRef.on('child_added', snapshot => {
-      const { name, email, subject, message, time } = snapshot.val();
-      const data = { name, email, subject, message, time };
-      this.setState({ form: [data].concat(this.state.form) });
-    })
-  }
+  // componentWillMount() {
+  //   let formRef = DB.collection("contactForm").orderByKey().limitToLast(6);
+  //   formRef.on('child_added', snapshot => {
+  //     const { name, email, subject, message, time } = snapshot.val();
+  //     const data = { name, email, subject, message, time };
+  //     this.setState({ form: [data].concat(this.state.form) });
+  //   })
+  // }
 
   sendMessage(e) {
     const timeStamp = new Date();
@@ -47,7 +47,7 @@ class Contact extends Component {
       time: timeStamp
     };
     if (params.name && params.email && params.subject && params.message && params.time) {
-      DB.ref('form').push(params).then(() => {
+      DB.collection("contactForm").add(params).then(() => {
         this.showAlert('success', 'Your message was sent successfull');
       }).catch(() => {
         this.showAlert('danger', 'Your message could not be sent');
@@ -82,7 +82,7 @@ class Contact extends Component {
                 Drop us a line and We'll get back to you as soon as we can
               </div>
               <form
-             onSubmit={this.sendMessage.bind(this)} ref='contactForm'
+             onSubmit={this.sendMessage.bind(this)} ref='cForm'
                 className="w-full max-w-sm"
               >
                     <div>
@@ -134,7 +134,15 @@ class Contact extends Component {
                         </button>
                       </div>
                       </form>
+                      <div>
+                      {this.state.alert && <div className={`alert alert-${this.state.alertData.type}`} role='alert'>
+          <div className='container'>
+            {this.state.alertData.message}
+          </div>
+        </div>}
                       </div>
+                      </div>
+                      
                
       );
     }
