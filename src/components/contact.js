@@ -1,29 +1,62 @@
 import React, {Component} from 'react';
 import '../styles/contactus.css';
 import DB from './FirebaseConfigs'
+// import firebaseConf from './Firebase';
 
 class Contact extends Component {
-     submit(e) {
-      const timestamp = new Date();
-       e.preventDefault();
-        // if (this.$refs.form.validate()) {
-        //   this.snackbar = true;
-        //   const timestamp = new Date();
-        //   const formData = {
-        //     name: this.name,
-        //     email: this.email,
-        //     subject: this.subject,
-        //     message: this.message,
-        //     timestamp
-        //   };
-        //   DB.collection("contactForm")
-        //     .add(formData)
-        //     .then(() => {
-        //       alert("Your Email Has Been Sent!");
-        //     });
-        //   this.$refs.form.reset();
-        // }
-      }
+  constructor(props) {
+    super(props);
+    this.state = {
+      form: [],
+      alert: false,
+      alertData: {}
+    };
+  }
+
+  showAlert(type, message) {
+    this.setState({
+      alert: true,
+      alertData: { type, message }
+    });
+    setTimeout(() => {
+      this.setState({ alert: false });
+    }, 4000)
+  }
+
+  resetForm() {
+    this.refs.contactForm.reset();
+  }
+
+  componentWillMount() {
+    let formRef = DB.ref('form').orderByKey().limitToLast(6);
+    formRef.on('child_added', snapshot => {
+      const { name, email, subject, message, time } = snapshot.val();
+      const data = { name, email, subject, message, time };
+      this.setState({ form: [data].concat(this.state.form) });
+    })
+  }
+
+  sendMessage(e) {
+    const timeStamp = new Date();
+    e.preventDefault();
+    const params = {
+      name: this.inputName.value,
+      email: this.inputEmail.value,
+      subject: this.inputSubject.value,
+      message: this.textAreaMessage.value,
+      time: timeStamp
+    };
+    if (params.name && params.email && params.subject && params.message && params.time) {
+      DB.ref('form').push(params).then(() => {
+        this.showAlert('success', 'Your message was sent successfull');
+      }).catch(() => {
+        this.showAlert('danger', 'Your message could not be sent');
+      });
+      this.resetForm();
+    } else {
+      this.showAlert('warning', 'Please fill the form');
+    };
+  }
     render(){
       return (
         <div className="index-9-cont">
@@ -49,42 +82,46 @@ class Contact extends Component {
                 Drop us a line and We'll get back to you as soon as we can
               </div>
               <form
-              id="form"
+             onSubmit={this.sendMessage.bind(this)} ref='contactForm'
                 className="w-full max-w-sm"
               >
-                    <div pb-0 pt-5 lg4>
+                    <div>
                       <input
                         id="name"
+                        ref={name => this.inputName = name}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         placeholder="Your Name"
                         type="text"
                       >
                       </input>
                     </div>
-                    <div pb-0 pt-5 lg4>
+                    <div>
                       <input
                         id="email"
+                        ref={email => this.inputEmail = email}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         placeholder="Your Email"
-                        type="text"
+                        type="email"
                       >
                       </input>
                     </div>
-                    <div pb-0 pt-5 lg4>
+                    <div>
                       <input
                         id="subject"
+                        ref={subject => this.inputSubject = subject}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         placeholder="Your Subject"
                         type="text"
                       >
                       </input>
                       </div>
-                    <div pb-0 xs12>
+                    <div>
                       <textarea
                         id="message"
                         rows="10"
                         cols="37"
                         type="text"
+                        ref={message => this.textAreaMessage = message}
                         placeholder="Enter Your Message"
                       ></textarea>
                     </div>
@@ -92,7 +129,6 @@ class Contact extends Component {
                         <button
                           type="submit"
                           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                          onClick={this.submit}
                         >
                           {/* <i size="40px">mdi-email-outline</i> */} Submit
                         </button>
