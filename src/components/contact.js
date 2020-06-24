@@ -6,6 +6,7 @@ import DB from './FirebaseConfigs'
 class Contact extends Component {
   constructor(props) {
     super(props);
+    this.formRef = React.createRef()
     this.state = {
       form: [],
       alert: false,
@@ -24,7 +25,7 @@ class Contact extends Component {
   }
 
   resetForm() {
-    this.refs.cForm.reset();
+    this.formRef.current.reset();
   }
 
   // componentWillMount() {
@@ -82,7 +83,7 @@ class Contact extends Component {
                 Drop us a line and We'll get back to you as soon as we can
               </div>
               <form
-             onSubmit={this.sendMessage.bind(this)} ref='cForm'
+             onSubmit={this.sendMessage.bind(this)} ref={this.formRef}
                 className="w-full max-w-sm"
               >
                     <div>
